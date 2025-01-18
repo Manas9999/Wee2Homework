@@ -21,11 +21,11 @@ import java.time.LocalDate;
 @Table(name = "Department")
 public class DepartmentEntity {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+   // @GeneratedValue(strategy = GenerationType)
     private long id;
-
+    private String password;
     private String tittle;
-//    @JsonProperty("isActive")
+    @JsonProperty("isActive")
 
     private Boolean isActive;
 
